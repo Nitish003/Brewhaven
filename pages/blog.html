@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="The Brew Haven Journal — brewing guides, origin stories, sustainability deep-dives, and everything about Indian specialty coffee." />
+    <title>Blog — The Brew Haven Journal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=DM+Mono:wght@300;400&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="../style.css" />
+</head>
+
+<body>
+    <div class="page-overlay">
+        <div class="overlay-left"></div>
+        <div class="overlay-right"></div>
+    </div>
+    <div class="cursor-dot" id="cursorDot"></div>
+    <div class="cursor-ring" id="cursorRing"><span class="cursor-label">EXPLORE</span></div>
+
+    <nav class="navbar scrolled" id="navbar">
+        <div class="nav-inner">
+            <a href="../index.html" class="nav-logo">THE BREW HAVEN</a>
+            <ul class="nav-links">
+                <li><a href="../index.html" class="nav-link">Home</a></li>
+                <li><a href="story.html" class="nav-link">Our Story</a></li>
+                <li><a href="shop.html" class="nav-link">Products</a></li>
+                <li><a href="blog.html" class="nav-link" style="color:var(--accent)">Blog</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div style="display:flex;gap:12px;align-items:center">
+                <button class="nav-cart-btn" id="cartIconBtn" aria-label="Open cart">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="1.5">
+                        <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4zM3 6h18M16 10a4 4 0 01-8 0" />
+                    </svg>
+                    BAG<span class="cart-badge">0</span>
+                </button>
+                <button class="hamburger" id="hamburger"
+                    aria-label="Open menu"><span></span><span></span><span></span></button>
+            </div>
+        </div>
+        <div class="mobile-menu" id="mobileMenu">
+            <ul class="mobile-links">
+                <li><a href="../index.html" class="mobile-link">Home</a></li>
+                <li><a href="story.html" class="mobile-link">Our Story</a></li>
+                <li><a href="shop.html" class="mobile-link">Products</a></li>
+                <li><a href="blog.html" class="mobile-link">Blog</a></li>
+                <li><a href="contact.html" class="mobile-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- PAGE HERO -->
+    <div class="page-hero">
+        <div class="container">
+            <p class="section-label page-hero-label reveal-up">FROM THE JOURNAL</p>
+            <h1 class="page-hero-title reveal-up">Stories Worth Steeping In</h1>
+            <p class="page-hero-sub reveal-up">Brewing guides, origin stories, sustainability deep-dives, and everything
+                you need to become a more informed coffee drinker.</p>
+        </div>
+    </div>
+
+    <!-- BLOG GRID -->
+    <main class="container" style="padding-top:0;">
+
+        <!-- Category filter -->
+        <div class="shop-controls">
+            <div class="shop-controls-inner" style="justify-content:flex-start;">
+                <div class="shop-filters" id="blogFilters">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="education">Education</button>
+                    <button class="filter-btn" data-filter="brewing">Brewing</button>
+                    <button class="filter-btn" data-filter="sustainability">Sustainability</button>
+                    <button class="filter-btn" data-filter="origin">Origin Stories</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="blog-page-grid" id="blogGrid">
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <p class="footer-logo">THE BREW HAVEN</p>
+                    <p class="footer-tagline">Where every sip tells a story.</p>
+                </div>
+                <div class="footer-cols">
+                    <div class="footer-col">
+                        <h5 class="footer-col-title">Shop</h5>
+                        <ul>
+                            <li><a href="shop.html">All Coffees</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h5 class="footer-col-title">Learn</h5>
+                        <ul>
+                            <li><a href="story.html">Our Story</a></li>
+                            <li><a href="blog.html">Journal</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h5 class="footer-col-title">Connect</h5>
+                        <ul>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h5 class="footer-col-title">Legal</h5>
+                        <ul>
+                            <li><a href="#">Privacy</a></li>
+                            <li><a href="#">Terms</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-copy">© 2026 The Brew Haven · Crafted with care in India</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/products.js"></script>
+    <script src="../js/cart.js"></script>
+    <script src="../js/chatbot.js"></script>
+    <script>
+        window.addEventListener('load', () => { setTimeout(() => { document.querySelector('.overlay-left').classList.add('open'); document.querySelector('.overlay-right').classList.add('open'); }, 100); });
+        const cursorDot = document.getElementById('cursorDot'), cursorRing = document.getElementById('cursorRing');
+        let mouseX = 0, mouseY = 0, ringX = 0, ringY = 0;
+        document.addEventListener('mousemove', e => { mouseX = e.clientX; mouseY = e.clientY; cursorDot.style.left = mouseX + 'px'; cursorDot.style.top = mouseY + 'px'; });
+        (function lerpRing() { ringX += (mouseX - ringX) * 0.12; ringY += (mouseY - ringY) * 0.12; cursorRing.style.left = ringX + 'px'; cursorRing.style.top = ringY + 'px'; requestAnimationFrame(lerpRing); })();
+        document.querySelectorAll('a,button').forEach(el => { el.addEventListener('mouseenter', () => cursorRing.classList.add('hovering')); el.addEventListener('mouseleave', () => cursorRing.classList.remove('hovering')); });
+        const hamburger = document.getElementById('hamburger'), mobileMenu = document.getElementById('mobileMenu');
+        hamburger.addEventListener('click', () => { const open = hamburger.classList.toggle('is-open'); mobileMenu.classList.toggle('is-open', open); document.body.style.overflow = open ? 'hidden' : ''; });
+        document.querySelectorAll('.mobile-link').forEach(l => l.addEventListener('click', () => { hamburger.classList.remove('is-open'); mobileMenu.classList.remove('is-open'); document.body.style.overflow = ''; }));
+        const revObs = new IntersectionObserver(entries => { entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('is-visible'); }); }, { threshold: 0.12 });
+        document.querySelectorAll('.reveal-up,.reveal-stagger').forEach(el => revObs.observe(el));
+
+        const POSTS = [
+            { category: 'education', img: '../assets/images/blog-1.png', tag: 'Education', title: 'From Farm to Cup: Why Ethically Sourced Coffee Tastes Better', excerpt: 'The connection between how coffee is grown and how it tastes in your cup is profound. Stress affects the bean. Respect amplifies it. Here\'s the science and soul behind ethical sourcing.', date: 'March 4, 2026', readTime: '7 min read' },
+            { category: 'brewing', img: '../assets/images/blog-2.png', tag: 'Brewing', title: 'The Ultimate Home Brewing Guide: 6 Methods Ranked', excerpt: 'Pour over, French press, moka pot, cold brew, AeroPress, or South Indian filter coffee — which method is right for you? We rank all six with our honest, obsessive assessment.', date: 'February 22, 2026', readTime: '9 min read' },
+            { category: 'sustainability', img: '../assets/images/blog-3.png', tag: 'Sustainability', title: 'The Real Cost of Your Coffee: The Truth About Sustainability', excerpt: 'Your morning cup has a supply chain spanning continents and involving dozens of hands. Here\'s what\'s lost along the way — and what direct trade genuinely changes.', date: 'February 10, 2026', readTime: '6 min read' },
+            { category: 'origin', img: '../assets/images/hero.png', tag: 'Origin Stories', title: 'Coorg: India\'s Most Storied Coffee Region', excerpt: 'Kodagu district is mist-draped, emerald-green, and ancient. Its arabica trees grow in the shade of silver oak and pepper vines. We spent two weeks tracing its coffee history.', date: 'January 28, 2026', readTime: '8 min read' },
+            { category: 'origin', img: '../assets/images/brand-story.png', tag: 'Origin Stories', title: 'Chikmagalur: Where Indian Coffee Was Born', excerpt: 'In the 1670s, a Sufi saint named Baba Budan smuggled seven coffee seeds from Mecca and planted them in the hills above Chikmagalur. This is what those seeds became.', date: 'January 14, 2026', readTime: '7 min read' },
+            { category: 'education', img: '../assets/images/blog-1.png', tag: 'Education', title: 'What Is Honey Processing? A Deep Dive', excerpt: 'Between washed and natural lies the honey process — where mucilage is left on the bean during drying, creating extraordinary natural sweetness. We explain the full science.', date: 'January 5, 2026', readTime: '5 min read' },
+            { category: 'brewing', img: '../assets/images/blog-2.png', tag: 'Brewing', title: 'The Perfect South Indian Filter Coffee at Home', excerpt: 'Chicory ratio, water temperature, brass filter technique, the art of the pull — everything you need to achieve that iconic, frothy, deeply nostalgic cup at home.', date: 'December 18, 2025', readTime: '6 min read' },
+            { category: 'sustainability', img: '../assets/images/blog-3.png', tag: 'Sustainability', title: 'How We Achieved Zero Waste at Our Roastery', excerpt: 'Coffee chaff, silver skin, waste heat, packaging — every element of our roastery has been redesigned with zero waste in mind. Here\'s exactly what that looks like.', date: 'December 5, 2025', readTime: '5 min read' },
+            { category: 'education', img: '../assets/images/prod-coorg-light.png', tag: 'Education', title: 'Altitude, Acidity, and Why Elevation Matters', excerpt: 'A coffee grown at 1,800 metres tastes different from one grown at 900 metres. We explain why altitude transforms flavour — and why our farm elevations matter so much.', date: 'November 20, 2025', readTime: '6 min read' },
+        ];
+
+        let currentFilter = 'all';
+        function renderBlog() {
+            const grid = document.getElementById('blogGrid');
+            const filtered = currentFilter === 'all' ? POSTS : POSTS.filter(p => p.category === currentFilter);
+            grid.innerHTML = filtered.map((p, i) => `
+        <article class="blog-card reveal-stagger" style="--delay:${i * 0.07}s">
+          <div class="blog-img-wrap"><img src="${p.img}" alt="${p.title}" class="blog-img" loading="lazy"/><div class="blog-img-overlay"></div></div>
+          <div class="blog-content">
+            <span class="blog-tag">${p.tag}</span>
+            <h2 class="blog-title">${p.title}</h2>
+            <p class="blog-excerpt">${p.excerpt}</p>
+            <div style="display:flex;align-items:center;justify-content:space-between;margin-top:12px;">
+              <span style="font-family:var(--font-mono);font-size:10px;color:var(--text-muted);letter-spacing:0.12em;">${p.date} · ${p.readTime}</span>
+              <a href="#" class="blog-read">READ MORE →</a>
+            </div>
+          </div>
+        </article>
+      `).join('');
+            grid.querySelectorAll('.reveal-stagger').forEach(el => revObs.observe(el));
+        }
+        document.getElementById('blogFilters').querySelectorAll('.filter-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                currentFilter = btn.dataset.filter;
+                renderBlog();
+            });
+        });
+        renderBlog();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="The story behind The Brew Haven — how two coffee lovers built a direct-trade roastery sourcing single-origin beans from Coorg and Chikmagalur, India." />
+    <title>Our Story — The Brew Haven · Born in the Mist of Coorg</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=DM+Mono:wght@300;400&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="../style.css" />
+</head>
+
+<body>
+    <div class="page-overlay">
+        <div class="overlay-left"></div>
+        <div class="overlay-right"></div>
+    </div>
+    <div class="cursor-dot" id="cursorDot"></div>
+    <div class="cursor-ring" id="cursorRing"><span class="cursor-label">EXPLORE</span></div>
+
+    <nav class="navbar scrolled" id="navbar">
+        <div class="nav-inner">
+            <a href="../index.html" class="nav-logo">THE BREW HAVEN</a>
+            <ul class="nav-links">
+                <li><a href="../index.html" class="nav-link">Home</a></li>
+                <li><a href="story.html" class="nav-link" style="color:var(--accent)">Our Story</a></li>
+                <li><a href="shop.html" class="nav-link">Products</a></li>
+                <li><a href="blog.html" class="nav-link">Blog</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div style="display:flex;gap:12px;align-items:center">
+                <button class="nav-cart-btn" id="cartIconBtn" aria-label="Open cart">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="1.5">
+                        <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4zM3 6h18M16 10a4 4 0 01-8 0" />
+                    </svg>
+                    BAG<span class="cart-badge">0</span>
+                </button>
+                <button class="hamburger" id="hamburger"
+                    aria-label="Open menu"><span></span><span></span><span></span></button>
+            </div>
+        </div>
+        <div class="mobile-menu" id="mobileMenu">
+            <ul class="mobile-links">
+                <li><a href="../index.html" class="mobile-link">Home</a></li>
+                <li><a href="story.html" class="mobile-link">Our Story</a></li>
+                <li><a href="shop.html" class="mobile-link">Products</a></li>
+                <li><a href="blog.html" class="mobile-link">Blog</a></li>
+                <li><a href="contact.html" class="mobile-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- PAGE HERO -->
+    <div class="page-hero"
+        style="background:linear-gradient(to bottom, rgba(10,7,5,0.92),rgba(10,7,5,0.75)), url('../assets/images/brand-story.png') center/cover no-repeat; min-height:70vh; display:flex; align-items:center; border-bottom: none;">
+        <div class="container" style="text-align:center; padding-top:40px;">
+            <p class="section-label reveal-up">ABOUT US</p>
+            <h1 class="page-hero-title reveal-up" style="max-width:800px;margin:0 auto 20px;">Born in the<br /><em
+                    style="color:var(--accent)">Mist of Coorg</em></h1>
+            <p class="page-hero-sub reveal-up">A story of reverence for the land, the farmer, and the bean.</p>
+        </div>
+    </div>
+
+    <!-- ORIGIN STORY -->
+    <section class="inner-section">
+        <div class="container">
+            <div class="story-inner">
+                <div class="story-image-wrap reveal-up">
+                    <img src="../assets/images/brand-story.png" alt="Coffee farmer holding freshly picked cherries"
+                        class="story-img" />
+                </div>
+                <div class="story-content reveal-up">
+                    <p class="section-label">THE BEGINNING</p>
+                    <h2 class="story-headline">We didn't start a brand.<br /><em>We started a conversation.</em></h2>
+                    <div class="gold-rule"></div>
+                    <p class="story-text">In 2021, two friends sat in a small café in Coorg, nursing cups of filter
+                        coffee made from beans they'd just watched being handpicked on a farm twenty minutes away. The
+                        difference was undeniable. It was not just coffee. It was a place, a morning, a person.</p>
+                    <p class="story-text">Three years and forty farm visits later, The Brew Haven exists to close that
+                        gap between the person who grew your coffee and the person who drinks it. We believe that
+                        transparency is the most powerful ingredient in specialty coffee — more than elevation, more
+                        than variety, more than process.</p>
+                    <p class="story-text">We source exclusively from farms we have visited, from farmers we know by
+                        name. Every bag you receive carries with it the coordinates of where it was grown, the name of
+                        the estate, and a note from the farmer who picked it.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TIMELINE -->
+    <section class="inner-section section-dark">
+        <div class="container">
+            <p class="section-label reveal-up" style="text-align:center">OUR JOURNEY</p>
+            <h2 class="section-title reveal-up" style="text-align:center;margin-bottom:80px;">From Idea to Origin</h2>
+            <div style="max-width:720px;margin:0 auto;">
+                <div class="story-timeline">
+                    <div class="timeline-item reveal-stagger" style="--delay:0s">
+                        <p class="timeline-year">2021</p>
+                        <h3 class="timeline-title">The First Cup</h3>
+                        <p class="timeline-text">Two travel writers visit Coorg on an unrelated assignment. They drink
+                            coffee on a farm. They never fully return to the life they had before that morning.</p>
+                    </div>
+                    <div class="timeline-item reveal-stagger" style="--delay:0.1s">
+                        <p class="timeline-year">2022</p>
+                        <h3 class="timeline-title">The Farm Visits Begin</h3>
+                        <p class="timeline-text">Over 12 months, 40 farm visits across Coorg and Chikmagalur.
+                            Relationships built. Direct trade agreements signed. The first harvest purchased.</p>
+                    </div>
+                    <div class="timeline-item reveal-stagger" style="--delay:0.2s">
+                        <p class="timeline-year">2022</p>
+                        <h3 class="timeline-title">The Roastery Opens</h3>
+                        <p class="timeline-text">A small-batch roastery established in Bangalore with zero-waste
+                            commitment. The first official Brew Haven roast is produced — the Coorg Light.</p>
+                    </div>
+                    <div class="timeline-item reveal-stagger" style="--delay:0.3s">
+                        <p class="timeline-year">2023</p>
+                        <h3 class="timeline-title">Launch & First 100 Customers</h3>
+                        <p class="timeline-text">The Brew Haven launches online. Within 30 days, the founding batch of
+                            100 customers receives their first bags. The reviews are overwhelming.</p>
+                    </div>
+                    <div class="timeline-item reveal-stagger" style="--delay:0.4s">
+                        <p class="timeline-year">2024</p>
+                        <h3 class="timeline-title">Expanding the Collection</h3>
+                        <p class="timeline-text">Dark Reserve Blend, Honey Process, Espresso Blend, and the South Indian
+                            Filter Blend join the collection. The Connoisseur's Box subscription launches.</p>
+                    </div>
+                    <div class="timeline-item reveal-stagger" style="--delay:0.5s">
+                        <p class="timeline-year">2025</p>
+                        <h3 class="timeline-title">Carbon-Offset Logistics</h3>
+                        <p class="timeline-text">Every shipment becomes 100% carbon-offset through a reforestation
+                            program in the Western Ghats. We partner with three more estates.</p>
+                    </div>
+                    <div class="timeline-item reveal-stagger" style="--delay:0.6s">
+                        <p class="timeline-year">2026</p>
+                        <h3 class="timeline-title">500+ Happy Customers & Growing</h3>
+                        <p class="timeline-text">Over 500 customers. 8 products. 2 origins. And still, each bag is
+                            packed by hand and accompanied by a handwritten note from our team in Bangalore.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MEET THE FARMERS -->
+    <section class="inner-section">
+        <div class="container">
+            <p class="section-label reveal-up" style="text-align:center">DIRECT TRADE</p>
+            <h2 class="section-title reveal-up" style="text-align:center">Meet Our Farm Partners</h2>
+            <div class="farmers-grid">
+                <div class="farmer-card reveal-stagger" style="--delay:0s">
+                    <div class="farmer-img">
+                        <img src="../assets/images/hero.png" alt="Devagiri Estate, Coorg"
+                            style="object-position:center 30%;" />
+                    </div>
+                    <div class="farmer-body">
+                        <h3 class="farmer-name">Devagiri Estate</h3>
+                        <p class="farmer-loc">Kodagu, Karnataka · 1,200m</p>
+                        <p class="farmer-quote">"We have been growing coffee for four generations. Working directly with
+                            The Brew Haven means we finally receive what our coffee is worth."</p>
+                    </div>
+                </div>
+                <div class="farmer-card reveal-stagger" style="--delay:0.15s">
+                    <div class="farmer-img">
+                        <img src="../assets/images/brand-story.png" alt="Mullayanagiri Estate, Chikmagalur"
+                            style="object-position:center 20%;" />
+                    </div>
+                    <div class="farmer-body">
+                        <h3 class="farmer-name">Mullayanagiri Estate</h3>
+                        <p class="farmer-loc">Chikmagalur, Karnataka · 1,800m</p>
+                        <p class="farmer-quote">"The difference between a broker and a direct buyer is night and day.
+                            The Brew Haven knows our names. They know our harvest. That matters."</p>
+                    </div>
+                </div>
+                <div class="farmer-card reveal-stagger" style="--delay:0.3s">
+                    <div class="farmer-img">
+                        <img src="../assets/images/blog-3.png" alt="Kemmanagundi Estate, Chikmagalur" />
+                    </div>
+                    <div class="farmer-body">
+                        <h3 class="farmer-name">Kemmanagundi Estate</h3>
+                        <p class="farmer-loc">Chikmagalur, Karnataka · 1,500m</p>
+                        <p class="farmer-quote">"Our honey-processed lot requires 21 days of careful attention. Knowing
+                            it reaches someone who appreciates that — that makes it worthwhile."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- VALUES -->
+    <section class="inner-section section-green">
+        <div class="container">
+            <p class="section-label reveal-up" style="text-align:center">WHAT WE STAND FOR</p>
+            <h2 class="section-title reveal-up" style="text-align:center">Our Values</h2>
+            <div class="sustain-grid" style="max-width:860px;margin:0 auto;">
+                <div class="sustain-card reveal-stagger" style="--delay:0s">
+                    <div class="sustain-icon"><svg viewBox="0 0 48 48" fill="none">
+                            <path d="M24 6 C14 6 6 14 6 24 C6 34 14 42 24 42 C34 42 42 34 42 24 C42 14 34 6 24 6Z"
+                                stroke="#C8860A" stroke-width="1.5" fill="none" />
+                            <path d="M16 24 L22 30 L32 18" stroke="#C8860A" stroke-width="1.5" />
+                        </svg></div>
+                    <h3 class="sustain-stat">Radical</h3>
+                    <h4 class="sustain-title">Transparency</h4>
+                    <p class="sustain-desc">Every bag shows the farm name, GPS coordinates, elevation, process method,
+                        and harvest date. We hide nothing about where your coffee comes from.</p>
+                </div>
+                <div class="sustain-card reveal-stagger" style="--delay:0.1s">
+                    <div class="sustain-icon"><svg viewBox="0 0 48 48" fill="none">
+                            <path d="M8 28 C8 20 16 12 24 12 C32 12 40 20 40 28" stroke="#C8860A" stroke-width="1.5"
+                                fill="none" />
+                            <path d="M16 38 L32 38" stroke="#C8860A" stroke-width="1.5" />
+                            <path d="M24 28 L24 38" stroke="#C8860A" stroke-width="1" />
+                        </svg></div>
+                    <h3 class="sustain-stat">Direct</h3>
+                    <h4 class="sustain-title">Trade Always</h4>
+                    <p class="sustain-desc">No brokers, no middlemen. We buy directly from every farm at a premium above
+                        fair trade rates. Our farmers are paid before we bottle a single drop.</p>
+                </div>
+                <div class="sustain-card reveal-stagger" style="--delay:0.2s">
+                    <div class="sustain-icon"><svg viewBox="0 0 48 48" fill="none">
+                            <circle cx="24" cy="24" r="16" stroke="#C8860A" stroke-width="1.5" />
+                            <path d="M16 24 L32 24 M24 16 L24 32" stroke="#C8860A" stroke-width="1.5" />
+                        </svg></div>
+                    <h3 class="sustain-stat">Small</h3>
+                    <h4 class="sustain-title">Batch Roasting</h4>
+                    <p class="sustain-desc">We never roast in bulk. Every production run is 5–15kg maximum. Freshness is
+                        never compromised. Your bag is roasted within days of shipping.</p>
+                </div>
+                <div class="sustain-card reveal-stagger" style="--delay:0.3s">
+                    <div class="sustain-icon"><svg viewBox="0 0 48 48" fill="none">
+                            <path d="M24 8 L28 20 L40 20 L30 28 L34 40 L24 32 L14 40 L18 28 L8 20 L20 20 Z"
+                                stroke="#C8860A" stroke-width="1.5" fill="none" />
+                        </svg></div>
+                    <h3 class="sustain-stat">Zero</h3>
+                    <h4 class="sustain-title">Waste Roastery</h4>
+                    <p class="sustain-desc">Coffee chaff is composted and returned to farm partners. Our packaging is
+                        100% plant-based and compostable. Waste is unacceptable to us.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="inner-section" style="text-align:center;padding:80px 0 120px;">
+        <div class="container">
+            <p class="section-label reveal-up">READY TO TASTE?</p>
+            <h2 class="section-title reveal-up" style="margin-bottom:28px;">The Cup Awaits You</h2>
+            <a href="shop.html" class="btn-outline reveal-up">Explore the Collection</a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <p class="footer-logo">THE BREW HAVEN</p>
+                    <p class="footer-tagline">Where every sip tells a story.</p>
+                </div>
+                <div class="footer-cols">
+                    <div class="footer-col">
+                        <h5 class="footer-col-title">Shop</h5>
+                        <ul>
+                            <li><a href="shop.html">All Coffees</a></li>
+                            <li><a href="shop.html">Subscription</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h5 class="footer-col-title">Learn</h5>
+                        <ul>
+                            <li><a href="story.html">Our Story</a></li>
+                            <li><a href="blog.html">Journal</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h5 class="footer-col-title">Connect</h5>
+                        <ul>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="#">Instagram</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h5 class="footer-col-title">Legal</h5>
+                        <ul>
+                            <li><a href="#">Privacy</a></li>
+                            <li><a href="#">Terms</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-copy">© 2026 The Brew Haven · Crafted with care in India</p>
+                <div class="footer-social">
+                    <a href="#" class="social-link" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="1.5">
+                            <rect x="2" y="2" width="20" height="20" rx="5" />
+                            <circle cx="12" cy="12" r="4" />
+                            <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" />
+                        </svg></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/products.js"></script>
+    <script src="../js/cart.js"></script>
+    <script src="../js/chatbot.js"></script>
+    <script>
+        window.addEventListener('load', () => { setTimeout(() => { document.querySelector('.overlay-left').classList.add('open'); document.querySelector('.overlay-right').classList.add('open'); }, 100); });
+        const cursorDot = document.getElementById('cursorDot'), cursorRing = document.getElementById('cursorRing');
+        let mouseX = 0, mouseY = 0, ringX = 0, ringY = 0;
+        document.addEventListener('mousemove', e => { mouseX = e.clientX; mouseY = e.clientY; cursorDot.style.left = mouseX + 'px'; cursorDot.style.top = mouseY + 'px'; });
+        (function lerpRing() { ringX += (mouseX - ringX) * 0.12; ringY += (mouseY - ringY) * 0.12; cursorRing.style.left = ringX + 'px'; cursorRing.style.top = ringY + 'px'; requestAnimationFrame(lerpRing); })();
+        document.querySelectorAll('a,button').forEach(el => { el.addEventListener('mouseenter', () => cursorRing.classList.add('hovering')); el.addEventListener('mouseleave', () => cursorRing.classList.remove('hovering')); });
+        const hamburger = document.getElementById('hamburger'), mobileMenu = document.getElementById('mobileMenu');
+        hamburger.addEventListener('click', () => { const open = hamburger.classList.toggle('is-open'); mobileMenu.classList.toggle('is-open', open); document.body.style.overflow = open ? 'hidden' : ''; });
+        document.querySelectorAll('.mobile-link').forEach(l => l.addEventListener('click', () => { hamburger.classList.remove('is-open'); mobileMenu.classList.remove('is-open'); document.body.style.overflow = ''; }));
+        const revObs = new IntersectionObserver(entries => { entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('is-visible'); }); }, { threshold: 0.12 });
+        document.querySelectorAll('.reveal-up,.reveal-stagger,.reveal-fade').forEach(el => revObs.observe(el));
+        window.addEventListener('scroll', () => { document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 80); }, { passive: true });
+    </script>
+</body>
+
+</html>
